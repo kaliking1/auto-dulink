@@ -12,8 +12,8 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(2054877)
-API_HASH = "4227c1e45e462209a3dcc67ada88a44f"
+API_ID = int(13305722)
+API_HASH = "0b9497d7545311aa4268ead78cd76fb8"
 BOT_TOKEN = "5583711986:AAFuyR53yiew0d3iPgLkKaqG7wRiXgktOx4"
 
 # Bot settings
@@ -22,8 +22,8 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 PICS = (environ.get('PICS', 'https://telegra.ph/file/8af59ac8a12110eaec85d.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5163003022 769411168 957158815').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001340331287 -1001686416905').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1742013609').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001781169126 -1001888865284').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -36,7 +36,7 @@ DATABASE_URI = "mongodb+srv://trvpn:trvpn@cluster0.ve0u8.mongodb.net/?retryWrite
 COLLECTION_NAME = 'Telegram_files'
 DATABASE_NAME = "Cluster0"
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001366123484))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', -1001257426098))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Trvpn')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
@@ -66,4 +66,4 @@ class Config(object):
 
       SHORTENER = 'dulink'
 
-      SHORTENER_API = '9cb4bd5502494531ca397429e90209097c51b4a8'
+      SHORTENER_API = '74e3ad185699944b866fc5d6a36bad87998cbb8b'
